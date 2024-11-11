@@ -1,0 +1,27 @@
+.nav ul {
+    list-style-type: none;
+    background-color: rgba(202, 108, 136, 0.872);
+    font-size: 30px;
+    padding: 10px 10px;
+} 
+.nav li a{
+    text-decoration: none ;
+    color:rgb(247, 242, 242) ;
+    padding: 20px 490px;
+
+}
+
+.boxsiswa{
+    display: flex;
+    justify-content: space-between;
+}  
+
+.mist {
+    background-color: rgb(240, 201, 201);
+    color: rgb(248, 245, 245);
+    padding: 90px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}

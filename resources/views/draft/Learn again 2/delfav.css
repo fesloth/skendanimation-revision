@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.post {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+button {
+    margin-right: 8px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.favorite-btn {
+    background-color: #ffcccb;
+    color: #a33;
+}
+
+.favorite-btn.favorited {
+    background-color: #ca7474;
+    color: #ffbebe;
+}
+
+.delete-btn {
+    background-color: #ca7474;
+    color: #fff;
+}
+
+#favorite-posts {
+    margin-top: 20px;
+}
+
+.saved-post {
+    background-color: #f0f8ff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}

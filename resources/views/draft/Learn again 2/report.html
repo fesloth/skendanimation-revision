@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Button Example</title>
+    <link rel="stylesheet" href="report.css">
+</head>
+<body>
+
+<div class="report-container">
+    <!-- Report button -->
+    <button id="reportBtn" class="report-button">Laporkan</button>
+    
+    <!-- Report options (Dropdown) -->
+    <div id="reportOptions" class="report-options hidden">
+        <button class="report-option" onclick="reportIssue('NSFW')">Berunsur NSFW</button>
+        <button class="report-option" onclick="reportIssue('Penghinaan')">Berisi Penghinaan</button>
+        <button class="report-option" onclick="reportIssue('Sensitif')">Konten Sensitif</button>
+        <button class="report-option" onclick="reportIssue('Unoriginal')">Konten milik author lain</button>
+    </div>
+</div>
+
+<script src="report.js"></script>
+
+</body>
+</html>

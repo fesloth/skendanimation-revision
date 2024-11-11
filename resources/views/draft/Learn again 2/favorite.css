@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.post {
+    border: 1px solid #c5b6b6;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    width: 300px;
+    color: #352222;
+}
+
+.save-btn {
+    background-color: #eeb8b8;
+    color: rgb(116, 49, 49);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btn.saved {
+    background-color: #bb7676; /* Change color when saved */
+    color: rgb(247, 191, 191);
+}
+
+#saved-posts {
+    margin-top: 20px;
+}
+
+.saved-post {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}

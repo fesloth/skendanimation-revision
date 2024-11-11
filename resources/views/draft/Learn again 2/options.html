@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Options Example</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <form id="optionForm">
+        <select id="konten" name="konten">
+            <option value="Art">Art</option>
+            <option value="Animation">Animation</option>
+            <option value="GIF">GIF</option>
+            <option value="commission">Commision</option>
+            <option value="ych">YCH</option>
+            <option value="3d">3D</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById('optionForm');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission to the server
+                const selectedValue = document.getElementById('konten').value;
+
+                // Send the selected value to the server using fetch API
+                fetch('/save-option', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ option: selectedValue })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    alert('Option saved: ' + data.option);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
