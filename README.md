@@ -29,24 +29,32 @@ Berikut adalah langkah-langkah untuk mengkloning dan menjalankan proyek ini di l
 ```bash
    cd nama-proyek-laravel
 ```
-4. Salin file .env.example menjadi .env:
+4. Install Composer
+```bash
+    composer install
+```
+5. Salin file .env.example menjadi .env:
 ```bash
     cp .env.example .env
 ```
-5. Buat kunci aplikasi Laravel dengan perintah:
+6. Buat kunci aplikasi Laravel dengan perintah:
 ```bash
    php artisan key:generate
 ```
-6. Jalankan migrasi untuk membuat tabel-tabel database:
+7. Install NPM
+```bash
+    npm install
+```
+8. Jalankan migrasi untuk membuat tabel-tabel database:
 ```bash
     php artisan migrate
 ```
-7. Jalankan server Laravel:
+9. Jalankan server Laravel:
 ```bash
    php artisan serve
 ```
-8. Buka browser dan akses proyek Anda melalui http://localhost:8000.
-9. Jalankan Tailwind:
+10. Buka browser dan akses proyek Anda melalui http://localhost:8000.
+11. Jalankan Tailwind:
 ```bash
     npm run dev
 ```
